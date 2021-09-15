@@ -112,7 +112,7 @@ export const createDogos: Handler = async (context, event) => {
 };
 ```
 
-> Nota que la conexión a la base de datos solo se hace cuando sea necesario, de otra forma la funcion hastaria mas tiempo en ejecutar
+> Nota que la conexión a la base de datos solo se hace cuando sea necesario, de otra forma la funcion gastaría más tiempo en ejecutar
 
 - Ajusta el código de la funcion `dogos.ts` para poder soportar el métodos `POST` y poder llamar a la función creada en el paso anterior
 - Prueba tu API usando [Postman](https://www.postman.com/downloads/), recuerda enviar la peticion post con el encabezado `content-type: application/json`
