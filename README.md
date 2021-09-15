@@ -38,7 +38,7 @@ MONGO_DB_URI=mongodb+srv://dbUser:<password>@cluster0.qitdn.mongodb.net/dogosDat
 ```typescript
 import { model, Schema } from "mongoose";
 
-interface Dogo {
+export interface Dogo {
   name: string;
   imageURL: string;
   age?: number;
