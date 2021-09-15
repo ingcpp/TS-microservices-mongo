@@ -1,7 +1,7 @@
 import { Handler } from "@netlify/functions";
 import fetch from "node-fetch";
 
-const handler: Handler = async (event, context) => {
+export const readDogos: Handler = async (context, event) => {
   const response = await fetch("https://random.dog/doggos");
   const data = await response.json();
 
@@ -15,10 +15,6 @@ const handler: Handler = async (event, context) => {
       }),
     };
   } else {
-    return {
-      statusCode: 404,
-    };
+    return { statusCode: 404 };
   }
 };
-
-export { handler };
