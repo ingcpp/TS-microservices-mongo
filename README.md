@@ -29,6 +29,8 @@ MONGO_DB_URI=mongodb+srv://dbUser:<password>@cluster0.qitdn.mongodb.net/dogosDat
 
 > Nota el nombre de la base de datos, esta definido en este caso como `dogosDatabase`
 
+- La variable de entorno sera mapeada en el archivo `config.ts` esto para tener las variables centralizadas para organizar mejor el código
+
 - Usaremos la libreria [Mongoose](https://mongoosejs.com/) que nos ayudara a definir modelos de la base de datos desde el código, esto hace que los modelos se puedan cambiar facilmente segun la aplicación vaya evolucionando
 - Crea en la carpeta models, un archivo llamado `DogoModel.ts`, usaremos upper camel case como buena práctica ya que esto se usará como una clase
 - Inserta el siguiente código que definirá un modelo y un nombre de la colección para los records de nuestro API
