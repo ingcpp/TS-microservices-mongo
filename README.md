@@ -19,7 +19,7 @@ Crearemos un API CRUD para las fotos de los perros que se trabajaron en el labor
 - Descarga un cliente de MongoDB, recomendamos [Robo 3T](https://robomongo.org/)
 - Prueba que tus credenciales funcionen correctamente usando tu cliente de mongo para conectarte al cluster
 - Haz fork de este repositorio en tu cuenta de Github
-- Crea un nuevo sitio en Netlify y conectalo con el repositorio que acabas de copiar
+- Crea un nuevo sitio en Netlify y conectalo con el repositorio que acabas de copiar, recuerda usar el comando `yarn netlify login` y el comando `yarn netlify link`
 - Recuerda vincular tu repositorio local con el sitio de Netlify, de esta manera podras tener las variables de entorno disponibles localmente para pruebas
 - Como parte de las [https://12factor.net/](buenas practicas), configuraremos las credenciales de la BD como parte de las variables de entorno, crea en Netlify una variable de entorno llamada `MONGO_DB_URI` con la url de conexión que obtienes de Mongo Atlas. Para esto busca en Netlify el menu `Sites` -> selecciona tu sitio -> `Site Settings` -> `Build & Deploy` -> `Environment` y añade la nueva variable, por ejemplo:
 
