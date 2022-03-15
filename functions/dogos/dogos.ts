@@ -9,6 +9,7 @@ const handler: Handler = (event, context, callback) => {
       break;
     case "PUT":
       return createDogo(event, context);
+      break;
   }
 };
 
