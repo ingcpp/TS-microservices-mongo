@@ -3,6 +3,7 @@ import { connectDatabase } from "../../db";
 import { DogosModel } from "../../models/DogosModel";
 
 export const createDogo: Handler = async (context, event) => {
+  console.log("Entro a create dogo");
   try {
     if (context.headers["content-type"] !== "application/json") {
       return {
